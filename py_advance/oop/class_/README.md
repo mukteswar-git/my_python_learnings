@@ -1,5 +1,5 @@
 ### Python Class
-A class is a collection of objects. Classes are blueprints for creating objects. A class defines a set of attributes and methods that the created objects (instances) can have.
+A class is a blueprint or template for creating objects.. A class defines a set of attributes and methods that the created objects (instances) can have.
 
 #### Some points on Python class:  
 

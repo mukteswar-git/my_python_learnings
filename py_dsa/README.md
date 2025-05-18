@@ -28,7 +28,7 @@ A complete DSA guide for mastering problem-solving and acing coding interviews.
 ### 🧱 Basics
 
 - [ ] Arrays & Strings
-- [ ] Time & Space Complexity (Big O)
+- [x] Time & Space Complexity (Big O)
 - [ ] Input/Output Handling
 - [ ] Bit Manipulation Basics
 
