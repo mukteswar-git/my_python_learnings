@@ -1,0 +1,32 @@
+* pip upgradatipon : python -m ensurepip --upgrade / python -m pip install --upgrade pip
+
+* tailwind installation:
+1. pip install django-tailwind, pip install django-tailwind[reload]
+2. Create Tailwind App
+python manage.py tailwind init
+3. Update settings.py
+INSTALLED_APPS = [
+    ...
+    'tailwind',
+    'theme',
+    'django_browser_reload',
+]
+NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = ['127.0.0.1']
+
+MIDDLEWARE = [
+    ...
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+]
+
+4. tailwind install
+python manage.py tailwind install
+
+5. Start tailwind
+python manage.py tailwind start
+
+
+
+
+
