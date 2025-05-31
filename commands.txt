@@ -27,6 +27,26 @@ python manage.py tailwind install
 python manage.py tailwind start
 
 
+6. media configuration 
+import os
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+7. static configuration
+import os
+'DIRS': ['templates'], # inside template section
+
+STATIC_URL = '/static/' # below this add the following line
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+- configure MEDIA_URL
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    #...
+    #...
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
